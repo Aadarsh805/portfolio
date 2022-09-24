@@ -11,15 +11,17 @@ const Navbar = () => {
       <div className="flex items-center gap-[116px]">
         <div className="flex items-center gap-[60px]">
           <Link href="/">
-            <a className="font-light text-lg text-[#0D0D0D] uppercase">About</a>
+            <a className="font-light text-[1.1rem] text-[#0D0D0D] uppercase">
+              About
+            </a>
           </Link>
           <Link href="/">
-            <a className="font-light text-lg text-[#0D0D0D] uppercase">
+            <a className="font-light text-[1.1rem] text-[#0D0D0D] uppercase">
               Projects
             </a>
           </Link>
           <Link href="/">
-            <a className="font-light text-lg text-[#0D0D0D] uppercase">
+            <a className="font-light text-[1.1rem] text-[#0D0D0D] uppercase">
               Contact
             </a>
           </Link>
