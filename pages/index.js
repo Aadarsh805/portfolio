@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import HeroSection from "../components/HeroSection";
 
 const index = () => {
-  return (
-    <div className='font-bold underline text-8xl'>index</div>
-  )
-}
+  return <HeroSection />;
+};
 
-export default index
+export default index;
