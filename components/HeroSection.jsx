@@ -29,20 +29,23 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-center justify-center gap-5 mt-[26px]">
-            <Link href="/" className="w-full">
-              <div className="flex items-center w-fit justify-center gap-[10px] bg-[#00ADFF] rounded p-3 h-[52px] cursor-pointer">
-                <span className="font-medium text-lg w-fit text-white">
+            <Link href="/" className="w-full relative button-">
+              <div className="z-10 group flex items-center relative w-fit justify-center gap-[10px] bg-[#00ADFF] rounded p-3 h-[52px] cursor-pointer">
+                <div className="h-[52px] absolute w-[199px] border-[1px] border-[#00ADFF] top-[7px] left-[7px] rounded group-hover:top-0 group-hover:left-0 ase-out duration-300"></div>
+                <span className=" font-medium text-lg w-fit text-white">
                   See My Projects
                 </span>
                 <ChevronRightIcon className="text-[#F8F8F8]" />
               </div>
             </Link>
-            <Link href="/" className="w-full">
-              <div className="flex items-center w-fit justify-center gap-[10px] bg-[#00ADFF] rounded p-3  h-[52px] cursor-pointer">
-                <span className="font-medium text-lg w-fit text-white">
+            <Link href="/" className="w-full relative group ">
+              <div className="z-10 group flex items-center relative w-fit justify-center gap-[10px] bg-[#F78DA7] rounded p-3 cursor-pointer">
+                <div className="h-[52px] absolute w-[228px] border-[1px] border-[#F78DA7] top-[7px] left-[7px] rounded group-hover:top-0 group-hover:left-0 ease-out duration-300"></div>
+
+                <span className=" font-medium group text-lg w-fit text-white">
                   Download Resume
                 </span>
-                <DownloadIcon className="text-[#F8F8F8]" />
+                <DownloadIcon className="text-[#F8F8F8] group" />
               </div>
             </Link>
           </div>
