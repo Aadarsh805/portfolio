@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <div className="bg-[#FAFAFF] ">
       <div className="flex items-start justify-between px-[300px] pt-[80px] gap-[146px]">
-        <div className="flex flex-col items-start ml-[120px]">
+        <div className="flex flex-col items-start ml-[140px]">
           <h1 className="w-[630px] h-[240px] font-md text-5xl leading-[72px] text-[#221E41]">
             Hello.
             <br />I am <span className="text-[#F78DA7]">Aadarsh</span>.<br />
@@ -29,7 +29,7 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-center justify-center gap-5 mt-[26px]">
-            <Link href="/" className="w-full relative button-">
+            <Link href="/" className="w-full relative">
               <div className="z-10 group flex items-center relative w-fit justify-center gap-[10px] bg-[#00ADFF] rounded p-3 h-[52px] cursor-pointer">
                 <div className="h-[52px] absolute w-[199px] border-[1px] border-[#00ADFF] top-[7px] left-[7px] rounded group-hover:top-0 group-hover:left-0 ase-out duration-300"></div>
                 <span className=" font-medium text-lg w-fit text-white">
@@ -38,7 +38,7 @@ const HeroSection = () => {
                 <ChevronRightIcon className="text-[#F8F8F8]" />
               </div>
             </Link>
-            <Link href="/" className="w-full relative group ">
+            <Link href="/" className="w-full relative group">
               <div className="z-10 group flex items-center relative w-fit justify-center gap-[10px] bg-[#F78DA7] rounded p-3 cursor-pointer">
                 <div className="h-[52px] absolute w-[228px] border-[1px] border-[#F78DA7] top-[7px] left-[7px] rounded group-hover:top-0 group-hover:left-0 ease-out duration-300"></div>
 
@@ -71,14 +71,6 @@ const HeroSection = () => {
             <LinkedInIcon className="text-[#00ADFF] w-[30px] h-[34px] " />
           </Link>
         </div>
-      </div>
-
-      <div className="absolute left-[310px] w-full gap-5 bottom-0 flex flex-col items-start">
-        {/* <p className="tracking-[.8em] uppercase font-normal text-base text-[#63607A] rotate-90">
-          scrolldown
-        </p> */}
-        <Image src={scroll} />
-        <div className="w-[1px] h-[176px] bg-[#63607a97]"></div>
       </div>
     </div>
   );
