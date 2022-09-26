@@ -17,7 +17,7 @@ const About = () => {
             <div className="w-[2px] mt-1 h-[122px] bg-[#F78DA7]"></div>
             <p className="font-md text-2xl w-[555px] text-[#757384]">
               I am Aadarsh, I specialize in frontend web development. I am a
-              third year college student, based in India .I love Design,
+              third year college student, based in India . I love Design,
               Technology, and Web.
             </p>
           </div>

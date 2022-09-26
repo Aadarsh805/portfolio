@@ -20,7 +20,7 @@ const Projects = () => {
       </div>
 
       <div className="grid grid-cols-2 mr-[300px] ml-[141px] gap-x-[66px] gap-y-[26px] mb-[65px]">
-        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE]">
+        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE] hover:shadow-md hover:shadow-gray-200 transition-shadow duration-300">
           <div className="flex flex-col gap-[27px]">
             <div className="flex items-center justify-between">
               <p className="text-[#00ADFF] font-medium text-2xl">Project 1</p>
@@ -59,7 +59,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE]">
+        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE] hover:shadow-md hover:shadow-gray-200 transition-shadow duration-300">
           <div className="flex flex-col gap-[27px]">
             <div className="flex items-center justify-between">
               <p className="text-[#00ADFF] font-medium text-2xl">Project 2</p>
@@ -98,7 +98,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE]">
+        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE] hover:shadow-md hover:shadow-gray-200 transition-shadow duration-300">
           <div className="flex flex-col gap-[27px]">
             <div className="flex items-center justify-between">
               <p className="text-[#00ADFF] font-medium text-2xl">Project 3</p>
@@ -137,7 +137,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE]">
+        <div className="flex flex-col justify-between h-[275px] py-[38px] px-[53px] rounded-lg border-[1px] border-[#E1DAFE] hover:shadow-md hover:shadow-gray-200 transition-shadow duration-300">
           <div className="flex flex-col gap-[27px]">
             <div className="flex items-center justify-between">
               <p className="text-[#00ADFF] font-medium text-2xl">Project 4</p>

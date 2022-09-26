@@ -4,10 +4,10 @@ import About from "../components/About";
 import Projects from "../components/Projects";
 import Navbar from "../components/Navbar";
 
-const index = () => {
+const index = ({ textEnter, textLeave }) => {
   return (
     <>
-      <Navbar />
+      <Navbar textEnter={textEnter} textLeave={textLeave} />
       <HeroSection />
       <About />
       <Projects />
