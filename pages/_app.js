@@ -18,25 +18,22 @@ function MyApp({ Component, pageProps }) {
         y: e.clientY + window.pageYOffset,
       });
     };
-    console.log(mousePosition);
 
     window.addEventListener("mousemove", mouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
+    
   }, []);
 
   const variants = {
     default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
+      x: mousePosition.x - 15,
+      y: mousePosition.y - 5,
     },
     text: {
-      height: 50,
-      width: 50,
-      x: mousePosition.x - 25,
-      y: mousePosition.y - 25,
+      height: 60,
+      width: 60,
+      x: mousePosition.x - 30,
+      y: mousePosition.y - 30,
       backgroundColor: "#fff",
       border: "0",
       mixBlendMode: "difference",
@@ -53,6 +50,7 @@ function MyApp({ Component, pageProps }) {
         variants={variants}
         animate={cursorVariant}
       />
+
       <Component
         {...pageProps}
         setCursorVariant={setCursorVariant}

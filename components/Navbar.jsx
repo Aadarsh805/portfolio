@@ -4,7 +4,10 @@ import Link from "next/link";
 const Navbar = ({ textEnter, textLeave }) => {
   return (
     <div className="flex items-center justify-between w-full py-[50px] px-[300px] z-10 bg-[#FAFAFF]">
-      <span className="h-[36px] font-medium text-2xl logo cursor-pointer">
+      <span
+        className="h-[36px] font-medium text-2xl logo cursor-pointer"
+        onClick={() => window.scroll(0, 0)}
+      >
         Aadarsh
       </span>
 
@@ -15,6 +18,7 @@ const Navbar = ({ textEnter, textLeave }) => {
               className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
               onMouseEnter={textEnter}
               onMouseLeave={textLeave}
+              onClick={() => window.scroll(0, 900)}
             >
               About
             </a>
@@ -24,6 +28,7 @@ const Navbar = ({ textEnter, textLeave }) => {
               onMouseEnter={textEnter}
               onMouseLeave={textLeave}
               className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
+              onClick={() => window.scroll(0, 1700)}
             >
               Projects
             </a>
@@ -33,6 +38,7 @@ const Navbar = ({ textEnter, textLeave }) => {
               onMouseEnter={textEnter}
               onMouseLeave={textLeave}
               className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
+              onClick={() => window.scroll(0, 5000)}
             >
               Contact
             </a>
