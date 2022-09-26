@@ -91,7 +91,6 @@ const index = ({ textEnter, textLeave }) => {
           }`}
           onClick={() => window.scroll(0, 5000)}
         ></a>
-        
       </div>
     </>
   );
