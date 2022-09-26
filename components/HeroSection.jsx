@@ -62,13 +62,13 @@ const HeroSection = () => {
         <div className="flex-1 h-[1px] bg-[#DDDCEC]"></div>
         <div className="flex items-center gap-[17px]">
           <Link href="/">
-            <TwitterIcon className="text-[#00ADFF] w-[30px] h-[34px]" />
+            <TwitterIcon className="text-[#00ADFF] w-[30px] h-[34px] hover:scale-125 transition-all duration-300" />
           </Link>
           <Link href="/">
-            <GitHubIcon className="text-[#00ADFF] w-[30px] h-[34px] " />
+            <GitHubIcon className="text-[#00ADFF] w-[30px] h-[34px] hover:scale-125  transition-all duration-300" />
           </Link>
           <Link href="/">
-            <LinkedInIcon className="text-[#00ADFF] w-[30px] h-[34px] " />
+            <LinkedInIcon className="text-[#00ADFF] w-[30px] h-[34px] hover:scale-125 transition-all duration-300  " />
           </Link>
         </div>
       </div>

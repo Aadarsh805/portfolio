@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Navbar = () => {
+const Navbar = ({ textEnter, textLeave }) => {
   return (
-    <div className="flex items-center justify-between w-full py-[50px] px-[300px] bg-[#FAFAFF]">
+    <div className="flex items-center justify-between w-full py-[50px] px-[300px] z-10 bg-[#FAFAFF]">
       <span className="h-[36px] font-medium text-2xl logo cursor-pointer">
         Aadarsh
       </span>
@@ -11,17 +11,29 @@ const Navbar = () => {
       <div className="flex items-center gap-[116px]">
         <div className="flex items-center gap-[60px]">
           <Link href="/">
-            <a className="font-light text-[1.1rem] text-[#0D0D0D] uppercase">
+            <a
+              className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+            >
               About
             </a>
           </Link>
           <Link href="/">
-            <a className="font-light text-[1.1rem] text-[#0D0D0D] uppercase">
+            <a
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+              className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
+            >
               Projects
             </a>
           </Link>
           <Link href="/">
-            <a className="font-light text-[1.1rem] text-[#0D0D0D] uppercase">
+            <a
+              onMouseEnter={textEnter}
+              onMouseLeave={textLeave}
+              className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
+            >
               Contact
             </a>
           </Link>

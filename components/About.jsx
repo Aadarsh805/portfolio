@@ -12,22 +12,19 @@ const About = () => {
         <h2 className="font-medium text-8xl leading-[145px] tracking-[0.065em] text-[#221E41]">
           About Me
         </h2>
-        <div className="flex items-start gap-[22px]">
-          <Image src={arrow} className="w-[13px] h-[141px]" />
-          <p className="font-md text-2xl text-[#757384]">
-            I love Design, Technology,
-            <br /> and Web.
+        <div className="flex flex-col items-start gap-[25px]">
+          <div className="flex items-start gap-[22px]">
+            <div className="w-[2px] mt-1 h-[122px] bg-[#F78DA7]"></div>
+            <p className="font-md text-2xl w-[555px] text-[#757384]">
+              I am Aadarsh, I specialize in frontend web development. I am a
+              third year college student, based in India . I love Design,
+              Technology, and Web.
+            </p>
+          </div>
+          <p className="font-md text-lg w-[555px] text-[#757384]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus eget dictum in diam tincidunt et. Nec, lectus mauris enim dignissim. Facilisis.
           </p>
         </div>
-        <Link href="/" className="w-full relative">
-          <div className="z-10 mt-[26px] group flex items-center relative w-fit justify-center gap-[10px] bg-[#00ADFF] rounded p-3 h-[52px] cursor-pointer">
-            <div className="h-[52px] absolute w-[154px] border-[1px] border-[#00ADFF] top-[7px] left-[7px]  rounded group-hover:top-0 group-hover:left-0 ase-out duration-300"></div>
-            <span className=" font-medium text-lg w-fit text-white">
-              Read More
-            </span>
-            <ChevronRightIcon className="text-[#F8F8F8]" />
-          </div>
-        </Link>
       </div>
 
       <div className="w-[679px] h-[370px] rounded flex items-center justify-end mr-[130px]">
