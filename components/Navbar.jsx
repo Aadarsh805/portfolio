@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between w-full py-[50px] px-[300px] bg-[#FAFAFF]">
+    <div className="flex items-center justify-between w-full py-[50px] px-[300px] z-10 bg-[#FAFAFF]">
       <span className="h-[36px] font-medium text-2xl logo cursor-pointer">
         Aadarsh
       </span>
