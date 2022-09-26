@@ -54,10 +54,10 @@ a {
 
 .cursor {
   z-index: 10;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
   position: absolute;
-  border: 2px solid #333;
+  background: #f78da7;
   border-radius: 50%;
   pointer-events: none;
 }

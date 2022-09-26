@@ -10,7 +10,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-const HeroSection = () => {
+const HeroSection = ({ textEnter, textLeave }) => {
   return (
     <div className="bg-[#FAFAFF] ">
       <div className="flex items-start justify-between px-[300px] pt-[80px] gap-[146px]">
