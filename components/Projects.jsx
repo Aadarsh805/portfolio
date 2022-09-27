@@ -4,7 +4,10 @@ import LaunchIcon from "@mui/icons-material/Launch";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col pl-[300px] bg-[#FAFAFF] py-[65px]">
+    <div
+      id="projects"
+      className="flex flex-col pl-[300px] bg-[#FAFAFF] py-[65px]"
+    >
       <div className="flex flex-col gap-1 ml-[141px] mb-[45px]">
         <div className="flex flex-col gap-5">
           <h2 className="font-medium text-5xl text-[#221E41]">
