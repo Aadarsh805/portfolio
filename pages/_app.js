@@ -20,8 +20,6 @@ function MyApp({ Component, pageProps }) {
     };
 
     window.addEventListener("mousemove", mouseMove);
-
-    
   }, []);
 
   const variants = {
@@ -35,7 +33,6 @@ function MyApp({ Component, pageProps }) {
       x: mousePosition.x - 30,
       y: mousePosition.y - 30,
       backgroundColor: "#fff",
-      border: "0",
       mixBlendMode: "difference",
     },
   };

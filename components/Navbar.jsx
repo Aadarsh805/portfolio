@@ -1,24 +1,38 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ScrollLink } from "react-scroll";
 
 const Navbar = ({ textEnter, textLeave }) => {
+  const scroll2El = (elID) => {
+    window.scrollTo({
+      top: document.getElementById(elID).offsetTop - 30,
+      behavior: "smooth",
+    });
+  };
+
+  const onBtnClick = (e) => {
+    e.preventDefault();
+    const goto = e.target.getAttribute("goto");
+    setTimeout(() => {
+      scroll2El(goto);
+    }, 100);
+  };
+
   return (
     <div className="flex items-center justify-between w-full py-[50px] px-[300px] z-10 bg-[#FAFAFF]">
-      <span
-        className="h-[36px] font-medium text-2xl logo cursor-pointer"
-        onClick={() => window.scroll(0, 0)}
-      >
+      <span className="h-[36px] font-medium text-2xl logo cursor-pointer">
         Aadarsh
       </span>
 
       <div className="flex items-center gap-[116px]">
-        <div className="flex items-center gap-[60px]">
+        <nav className="flex items-center gap-[60px]">
           <Link href="/">
             <a
-              className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
+              className="font-light text-[1.1rem] text-[#0D0D0D] uppercase cursor-pointer"
               onMouseEnter={textEnter}
               onMouseLeave={textLeave}
-              onClick={() => window.scroll(0, 900)}
+              goto="about"
+              onClick={onBtnClick}
             >
               About
             </a>
@@ -28,7 +42,8 @@ const Navbar = ({ textEnter, textLeave }) => {
               onMouseEnter={textEnter}
               onMouseLeave={textLeave}
               className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
-              onClick={() => window.scroll(0, 1700)}
+              goto="projects"
+              onClick={onBtnClick}
             >
               Projects
             </a>
@@ -38,12 +53,13 @@ const Navbar = ({ textEnter, textLeave }) => {
               onMouseEnter={textEnter}
               onMouseLeave={textLeave}
               className="font-light text-[1.1rem] text-[#0D0D0D] uppercase"
-              onClick={() => window.scroll(0, 5000)}
+              goto="contact"
+              onClick={onBtnClick}
             >
               Contact
             </a>
           </Link>
-        </div>
+        </nav>
 
         <Link href="/">
           <span className="flex items-center justify-center px-[11px] py-[5px] w-[90px] h-[33px] cursor-pointer bg-[#00ADFF] rounded text-base text-white font-normal">

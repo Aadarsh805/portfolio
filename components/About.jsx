@@ -7,7 +7,10 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 const About = () => {
   return (
-    <div className="flex justify-between items-center pl-[300px] py-[350px] gap-[146px] h-[50vh]">
+    <div
+      id="about"
+      className="flex justify-between items-center pl-[300px] py-[350px] gap-[146px] h-[50vh]"
+    >
       <div className="flex flex-col gap-1 ml-[140px]">
         <h2 className="font-medium text-7xl leading-[105px] tracking-[0.065em] text-[#221E41]">
           About Me
@@ -22,7 +25,9 @@ const About = () => {
             </p>
           </div>
           <p className="font-md text-lg w-[555px] text-[#757384]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus eget dictum in diam tincidunt et. Nec, lectus mauris enim dignissim. Facilisis.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus eget
+            dictum in diam tincidunt et. Nec, lectus mauris enim dignissim.
+            Facilisis.
           </p>
         </div>
       </div>

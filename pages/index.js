@@ -16,7 +16,6 @@ const index = ({ textEnter, textLeave }) => {
     const scrollFunc = () => {
       setWindowPosition(window.pageYOffset);
     };
-    console.log(windowPosition);
     window.addEventListener("scroll", scrollFunc);
 
     return () => {
@@ -51,10 +50,9 @@ const index = ({ textEnter, textLeave }) => {
     <>
       {/* take bake to top */}
       {isVisible && (
-        <div className="takeBackToTop">
+        <div className="takeBackToTop cursor-pointer" onClick={scrollToTop}>
           <ArrowUpwardIcon
-            onClick={scrollToTop}
-            font-size="medium"
+            fontSize="medium"
             sx={{ height: "25px", width: "30px" }}
           />
         </div>
